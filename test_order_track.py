@@ -10,3 +10,4 @@ def test_create_and_track_order():
     track_number = get_track_number_of_order()
     get_response = order_requests.get_order_info(track_number)
     assert get_response.status_code == 200
+
